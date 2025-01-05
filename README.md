@@ -7,10 +7,13 @@ This gives basic highlighting of syntax of Plingua used for membrane computing o
 ## Requirements
 VS code
 
+## Install
+Install through vs code extensions by using the install using VSIX option and selecting the plinguauva-0.0.1.vsix file
+
 ## Release Notes
 
 
-### 1.0.0
+### 0.0.1
 
 Initial release of Plingua syntax highlighter
 
