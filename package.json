@@ -1,0 +1,25 @@
+{
+  "name": "plinguauva",
+  "displayName": "PlinguaUvA",
+  "description": "Enabling syntax support for plingua",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "plingua",
+      "aliases": ["Plingua", "plingua"],
+      "extensions": [".pli"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "plingua",
+      "scopeName": "source.plingua",
+      "path": "./syntaxes/plingua.tmLanguage.json"
+    }]
+  }
+}

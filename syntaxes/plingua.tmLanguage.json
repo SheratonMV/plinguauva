@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "P-Lingua",
+	"patterns": [
+	  {
+		"include": "#keywords"
+	  },
+	  {
+		"include": "#strings"
+	  },
+	  {
+		"include": "#comments"
+	  }
+	],
+	"repository": {
+	  "keywords": {
+		"patterns": [{
+		  "name": "keyword.control.plingua",
+		  "match": "\\b(module|def|call|main|let|in|@mu|@ms)\\b"
+		}]
+	  },
+	  "strings": {
+		"name": "string.quoted.double.plingua",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.plingua",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  "comments": {
+		"patterns": [{
+		  "name": "comment.line.double-slash.plingua",
+		  "match": "//.*$"
+		}]
+	  }
+	},
+	"scopeName": "source.plingua"
+  }
+  
